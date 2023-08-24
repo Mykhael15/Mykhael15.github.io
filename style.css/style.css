@@ -1,0 +1,147 @@
+/* Estilos globais */
+body {
+    background-color: #333; /* Cor de fundo desejada, por exemplo, um tom de cinza escuro */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centraliza o conteúdo da página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para as seções */
+.section {
+    text-align: center;
+    color: #fff; /* Cor do texto nas seções */
+    padding: 40px 0;
+}
+
+/* Estilos para a seção "Clientes" */
+.clients-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.client {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box;
+    display: none;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+}
+
+.client img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.client h3 {
+    margin-top: 10px;
+}
+
+.client-btn {
+    background-color: #f55e07; /* Laranja escuro */
+    color: #000000; /* Cor do texto no botão */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para a seção de contato */
+.bg-contact {
+    background-color: #2bff00; /* Cor de fundo laranja escuro */
+    color: #fff; /* Cor do texto na seção de contato */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bg-contact h2 {
+    font-size: 32px; /* Tamanho da fonte para o título */
+    margin-bottom: 20px;
+}
+
+.bg-contact a.btn {
+    display: inline-block;
+    background-color: #333; /* Cor de fundo para o botão */
+    color: #fff; /* Cor do texto no botão */
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px; /* Tamanho da fonte para o botão */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bg-contact a.btn:hover {
+    background-color: #13af05; /* Cor de fundo laranja mais escura ao passar o mouse */
+}
+
+/* Estilo para o título h2 */
+#services h2 {
+    text-align: center;
+}
+
+/* Estilo para a lista de serviços */
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilo para cada item da lista */
+.service-list li {
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para os títulos dos serviços (h3) */
+.service-list li h3 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilo para os subtítulos dos serviços (h5) */
+.service-list li h5 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    color: #888; /* Cor do texto dos subtítulos */
+}
+
+/* Estilo para a seção */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo para o título h1 */
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o parágrafo */
+#home p {
+    font-size: 18px;
+    max-width: 600px; /* Largura máxima do parágrafo para controlar o comprimento das linhas */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+}
