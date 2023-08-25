@@ -34,3 +34,41 @@ nextButton.addEventListener('click', () => {
 
 // Mostrar o primeiro cliente ao carregar a página
 showClient(currentIndex);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const serviceList = document.querySelector(".service-list");
+    const serviceItems = document.querySelectorAll(".service-item");
+    const prevBtn = document.querySelector("#prev-client");
+    const nextBtn = document.querySelector("#next-client");
+
+    let currentIndex = 0;
+
+    function updateButtons() {
+        prevBtn.classList.toggle("disabled", currentIndex === 0);
+        nextBtn.classList.toggle("disabled", currentIndex === serviceItems.length - 1);
+    }
+
+    function updateCarousel() {
+        const translateX = -currentIndex * serviceItems[0].offsetWidth;
+        serviceList.style.transform = `translateX(${translateX}px)`;
+    }
+
+    prevBtn.addEventListener("click", function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+            updateButtons();
+        }
+    });
+
+    nextBtn.addEventListener("click", function () {
+        if (currentIndex < serviceItems.length - 1) {
+            currentIndex++;
+            updateCarousel();
+            updateButtons();
+        }
+    });
+
+    // Atualiza os botões iniciais
+    updateButtons();
+});
