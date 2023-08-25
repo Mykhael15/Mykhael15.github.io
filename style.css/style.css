@@ -50,6 +50,13 @@ body {
     display: block;
 }
 
+.services1 img {
+    width: 700px;
+    height: 394px;
+    margin: 0 auto;
+    display: block;
+}
+
 .client h3 {
     margin-top: 10px;
 }
@@ -68,8 +75,17 @@ body {
 .bg-contact {
     background-color: #2bff00; /* Cor de fundo laranja escuro */
     color: #fff; /* Cor do texto na seção de contato */
-    padding: 60px 0;
+    padding: 5px 0;
     text-align: center;
+
+}
+
+.bg-contact1 {
+    background-color: #ff5100; /* Cor de fundo laranja escuro */
+    color: #fff; /* Cor do texto na seção de contato */
+    padding: 5px 0;
+    text-align: center;
+
 }
 
 .bg-contact h2 {
@@ -91,6 +107,7 @@ body {
 .bg-contact a.btn:hover {
     background-color: #13af05; /* Cor de fundo laranja mais escura ao passar o mouse */
 }
+
 
 /* Estilo para o título h2 */
 #services h2 {
@@ -144,4 +161,49 @@ body {
     font-size: 18px;
     max-width: 600px; /* Largura máxima do parágrafo para controlar o comprimento das linhas */
     margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a010e; /* Cor de fundo padrão */
+    color: #fff; /* Cor do texto padrão */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição de cor de fundo suave */
+}
+
+.btn:hover {
+    background-color: #ff5733; /* Cor de fundo quando o mouse está sobre o botão */
+}
+
+.inicio {
+    background-color: #2bff00; /* Cor de fundo do header */
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+    padding: 10px 0; /* Espaçamento interno superior e inferior para o conteúdo */
+}
+
+/* Estilos para o header fixo */
+.inicio {
+    background-color: #ff5100; /* Cor de fundo do header */
+    color: #fff; /* Cor do texto do header */
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+    padding: 10px 0; /* Espaçamento interno superior e inferior para o conteúdo */
+    position: fixed; /* Tornar o header fixo */
+    top: 0; /* Fixar no topo da página */
+    width: 100%; /* Cobrir toda a largura da página */
+}
+
+/* Estilos para o link dentro do header */
+.inicio a.btn {
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none; /* Remover sublinhado do link */
+    padding: 10px 20px; /* Espaçamento interno do link */
+    border-radius: 10px; /* Arredondamento das bordas do link */
+}
+
+.inicio a.btn:hover {
+    background-color: #f55e07; /* Cor de fundo do link quando o mouse passa por cima */
+    color: #fff; /* Cor do texto do link quando o mouse passa por cima */
 }
