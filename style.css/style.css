@@ -1,6 +1,6 @@
 /* Estilos globais */
 body {
-    background-color: #333; /* Cor de fundo desejada, por exemplo, um tom de cinza escuro */
+    background-color: #333;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -17,7 +17,7 @@ body {
 /* Estilos para as seções */
 .section {
     text-align: center;
-    color: #fff; /* Cor do texto nas seções */
+    color: #fff;
     padding: 40px 0;
 }
 
@@ -51,8 +51,8 @@ body {
 }
 
 .services1 img {
-    width: 700px;
-    height: 394px;
+    width: 100%; /* Alteração: Faça a imagem ocupar toda a largura */
+    height: auto; /* Alteração: A altura é ajustada automaticamente */
     margin: 0 auto;
     display: block;
 }
@@ -62,8 +62,8 @@ body {
 }
 
 .client-btn {
-    background-color: #f55e07; /* Laranja escuro */
-    color: #000000; /* Cor do texto no botão */
+    background-color: #f55e07;
+    color: #000000;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -73,41 +73,31 @@ body {
 
 /* Estilos para a seção de contato */
 .bg-contact {
-    background-color: #2bff00; /* Cor de fundo laranja escuro */
-    color: #fff; /* Cor do texto na seção de contato */
+    background-color: #2bff00;
+    color: #fff;
     padding: 5px 0;
     text-align: center;
-
-}
-
-.bg-contact1 {
-    background-color: #ff5100; /* Cor de fundo laranja escuro */
-    color: #fff; /* Cor do texto na seção de contato */
-    padding: 5px 0;
-    text-align: center;
-
 }
 
 .bg-contact h2 {
-    font-size: 32px; /* Tamanho da fonte para o título */
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 .bg-contact a.btn {
     display: inline-block;
-    background-color: #333; /* Cor de fundo para o botão */
-    color: #fff; /* Cor do texto no botão */
+    background-color: #333;
+    color: #fff;
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 5px;
-    font-size: 18px; /* Tamanho da fonte para o botão */
+    font-size: 18px;
     transition: background-color 0.3s ease-in-out;
 }
 
 .bg-contact a.btn:hover {
-    background-color: #13af05; /* Cor de fundo laranja mais escura ao passar o mouse */
+    background-color: #13af05;
 }
-
 
 /* Estilo para o título h2 */
 #services h2 {
@@ -124,7 +114,7 @@ body {
 
 /* Estilo para cada item da lista */
 .service-list li {
-    margin-bottom: 20px; /* Espaçamento entre os itens */
+    margin-bottom: 20px;
 }
 
 /* Estilo para os títulos dos serviços (h3) */
@@ -139,7 +129,7 @@ body {
     text-align: center;
     font-size: 16px;
     margin: 0;
-    color: #888; /* Cor do texto dos subtítulos */
+    color: #888;
 }
 
 /* Estilo para a seção */
@@ -159,51 +149,136 @@ body {
 /* Estilo para o parágrafo */
 #home p {
     font-size: 18px;
-    max-width: 600px; /* Largura máxima do parágrafo para controlar o comprimento das linhas */
-    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0a010e; /* Cor de fundo padrão */
-    color: #fff; /* Cor do texto padrão */
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease; /* Transição de cor de fundo suave */
-}
-
-.btn:hover {
-    background-color: #ff5733; /* Cor de fundo quando o mouse está sobre o botão */
-}
-
+/* Estilos para o header */
 .inicio {
-    background-color: #2bff00; /* Cor de fundo do header */
-    text-align: center; /* Centralizar o conteúdo horizontalmente */
-    padding: 10px 0; /* Espaçamento interno superior e inferior para o conteúdo */
+    background-color: #cc6506;
+    text-align: center;
+    padding: 10px 0;
 }
 
-/* Estilos para o header fixo */
-.inicio {
-    background-color: #ff5100; /* Cor de fundo do header */
-    color: #fff; /* Cor do texto do header */
-    text-align: center; /* Centralizar o conteúdo horizontalmente */
-    padding: 10px 0; /* Espaçamento interno superior e inferior para o conteúdo */
-    position: fixed; /* Tornar o header fixo */
-    top: 0; /* Fixar no topo da página */
-    width: 100%; /* Cobrir toda a largura da página */
+
+/* Estilos para telas menores, como smartphones */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px; /* Reduz o preenchimento do container para telas menores */
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    /* Reduza o tamanho do logotipo para telas menores */
+    img {
+        max-width: 100%; /* Define a largura máxima da imagem como 100% da largura do elemento pai */
+        height: auto; /* Mantém a proporção de altura original da imagem */
+    }
 }
 
-/* Estilos para o link dentro do header */
+
 .inicio a.btn {
-    color: #fff; /* Cor do texto do link */
-    text-decoration: none; /* Remover sublinhado do link */
-    padding: 10px 20px; /* Espaçamento interno do link */
-    border-radius: 10px; /* Arredondamento das bordas do link */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .inicio a.btn:hover {
-    background-color: #f55e07; /* Cor de fundo do link quando o mouse passa por cima */
-    color: #fff; /* Cor do texto do link quando o mouse passa por cima */
+    background-color: #f55e07;
+}
+
+/* Estilos para telas menores */
+
+.btn-services {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f55e07; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+/* Estilo hover para o botão */
+.btn-services:hover {
+    background-color: #ff5100; /* Cor de fundo quando o mouse passa por cima do botão */
+    color: #fff; /* Cor do texto quando o mouse passa por cima do botão */
+}
+
+/* Estilos para telas maiores */
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ... (Outros estilos) ... */
+
+/* Estilos para telas menores, como smartphones */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px; /* Reduza o tamanho da fonte para telas menores */
+    }
+
+    .container {
+        padding: 10px; /* Reduza o preenchimento do container para telas menores */
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .client {
+        width: 100%; /* Faça com que os clientes ocupem toda a largura da tela */
+        margin-bottom: 20px;
+        padding: 20px; /* Adicione um espaço interno para melhor legibilidade */
+    }
+
+    /* Centralize o conteúdo da seção "Clientes" */
+    .clients-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajuste o tamanho da fonte para telas menores */
+    .service-list li h3 {
+        font-size: 18px;
+    }
+
+    /* Estilize o mapa do Google para telas menores */
+    .google-map {
+        width: 100%;
+        height: 200px; /* Reduza a altura do mapa para telas menores */
+    }
+
+    /* Estilize o rodapé */
+    footer {
+        text-align: center;
+    }
+}
+/* Alinhe o mapa no final da página */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilize o rodapé */
+footer p {
+    margin-top: 10px;
+    color: #ffffff;
 }
